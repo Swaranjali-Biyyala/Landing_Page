@@ -1,0 +1,195 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+select {
+        width: 170px;
+height:23px;
+        margin: 10px;
+    }
+
+
+.split {
+  height: 100%;
+  width: 50%;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-image : url("https://asset.gecdesigns.com/img/backgrounds/modern-crystal-abstract-background-template-1612247149783-cover.webp");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+
+.right {
+  right: 0;
+  background-image : url("https://asset.gecdesigns.com/img/backgrounds/modern-crystal-abstract-background-template-1612247149783-cover.webp");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 300px;
+  border-radius: 10%;
+}
+.button {
+  background-color: white;
+  border: 29x solid blue;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#d1 {
+  box-sizing: content-box;  
+  width: 400px;
+  padding: 10px;  
+  border: 5px solid white;
+}
+.b2{
+ background-color:white;
+  border: 29x solid blue;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+p {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+<h2>GO WITH : 05-01-2021</h2>
+<h3>Timed:9.00</h3>
+<h1>Learn python from scratch </h1>
+<h4>“Change is the end result of all true learning” hurry uppp!!!</h4>
+<h3>Webinar starts in</h3>
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+   
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+   
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+   
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+<input type="button" value="Enroll now"class="b2">
+
+
+</div>
+</div>
+
+<div class="split right">
+  <div class="centered"id="d1">        
+<form>
+
+
+
+
+
+<table>
+<tr>
+<td><h2><label for="fname">Your name:</label></h2></td>
+  <td><h2><input type="text" id="fname" name="fname"></h2></td><br><br>
+</tr><tr>  
+<td><h2><label for="lname">Email:</label></h2></td>
+  <td></h2><input type="text" id="lname" name="lname"><br></h2><br>
+  </td>
+<tr>
+
+<td><h2><label for="cours">select course:</label></h2></td>
+<td>
+
+<select name="course" id="courses">
+ <option value="python">Python</option>
+<option value="DataScience">Artificial Intelligence</option>
+ <option value="java">perl</option>
+<option value="Blockchain">Blockchain</option>
+ 
+
+</select>
+</td>
+</tr>
+<img src="https://previews.123rf.com/images/xmee/xmee1504/xmee150400026/39343145-portrait-of-a-young-business-woman-using-laptop-at-office.jpg"  width="700" height="300">
+
+<table>
+<tr>
+<td>
+<input type="checkbox" id="ck"></input></td>
+<td>
+<label>I agree to receive commercial information from [company name]
+</label>
+</td>
+</tr>
+</table>
+<button class="button">Register Now</button>
+
+
+
+</form>
+
+
+</div>
+</div>
+
+</body>
+</html>
+
+
